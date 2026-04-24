@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linwin / Embu Safi POS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===================== TOP BAR ===================== -->
+<header class="top-bar">
+  <select id="shopSelect">
+    <option value="Embu Safi">Embu Safi</option>
+    <option value="Linwin Enterprises">Linwin Enterprises</option>
+  </select>
+</header>
+
+<!-- ===================== TOTALS DASHBOARD ===================== -->
+<div id="totals" class="totals"></div>
+
+<!-- ===================== PRODUCTS ===================== -->
+<div id="products" class="products"></div>
+
+<!-- ===================== CART (BOTTOM FIXED) ===================== -->
+<div class="cart">
+
+  <div id="cartItems"></div>
+
+  <div class="cart-footer">
+    <div>
+      Total:
+      <span id="total">0</span>
+    </div>
+
+    <button onclick="checkout()">Checkout</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
